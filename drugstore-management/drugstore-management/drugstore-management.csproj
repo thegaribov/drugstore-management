@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>drugstore_management</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="ApplicaitonLogic\" />
+    <Folder Include="Database\" />
+    <Folder Include="UI\" />
+  </ItemGroup>
+
+</Project>
