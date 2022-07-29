@@ -37,6 +37,41 @@ namespace drugstore_management.Database.Repositories
             return Users;
         }
 
+        public static List<Owner> GetAllOwners()
+        {
+            List<Owner> owners = new List<Owner>();
+
+            foreach (User user in Users)
+            {
+                Owner owner = user as Owner;
+
+                if (owner != null)
+                {
+                    owners.Add(owner);
+                }
+            }
+
+            return owners;
+        }
+
+
+        public static List<Druggist> GetAllDruggist()
+        {
+            List<Druggist> druggists = new List<Druggist>();
+
+            foreach (User user in Users)
+            {
+                if (user is Druggist)
+                {
+                    druggists.Add((Druggist)user);
+                }
+            }
+
+            return druggists;
+        }
+
+
+
         public static void Delete(User user)
         {
             Users.Remove(user);
