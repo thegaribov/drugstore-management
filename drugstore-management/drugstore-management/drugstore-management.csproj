@@ -8,8 +8,6 @@
 
   <ItemGroup>
     <Folder Include="ApplicaitonLogic\" />
-    <Folder Include="Database\" />
-    <Folder Include="UI\" />
   </ItemGroup>
 
 </Project>
